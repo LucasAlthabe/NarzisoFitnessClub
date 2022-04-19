@@ -1,0 +1,174 @@
+
+*{ 
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.cuerpo{
+    background-color:  antiquewhite;
+}
+
+
+.header .header_menu ul{
+    list-style: none;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+.header .header_menu ul li{
+    display: inline;
+    margin: 0 20px;
+}
+
+.header .header_menu ul li a{
+    font-size: 30px;
+    padding: 20px;
+    color: black;
+    margin: 20px;
+}
+
+
+.titulo-uno{
+    color: black;
+    text-align: center;
+    font-size: 55px;
+    background-image: url(../Imagenes/fondo.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    position: relative;
+    
+    
+
+}
+
+.subtitulo{
+    color: black;
+    text-align: center;
+    font-style: italic;
+}
+
+.galeria{
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    justify-self: center;
+    align-self: center;
+    padding: 20px;
+    font-size: 10px;
+    margin: 10px;
+}
+
+.contenidogaleria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.galeria img{
+    width: 100%;
+    height: 160px;
+    border-radius: 15px;
+}
+
+.textogaleria{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+#Redes{
+    list-style-type: none;
+    padding-left: 25px;
+    text-decoration: none;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.formulario .formulario_uno{
+    margin-left: 15px;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.presentacion__titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    padding: 10px;
+    color: black;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}  
+
+.presentacion__parrafo{
+    display: flex;
+    text-align:justify;
+    padding: 50px;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    padding-top: 50px;
+    border-style: dashed;
+    border-radius: 50px;
+    
+}
+
+.galeriadeclases{
+    padding-top: 30px;
+
+    display: grid;  
+    /*grid-template-areas: "foto1 foto2 foto3"
+        "foto4 foto5 foto6"
+        "foto7 foto8 foto9"
+        "foto10 foto11 foto12";*/
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    row-gap: 20px;
+    justify-items: center;
+
+    
+}
+
+.foto1{
+    border-top-left-radius: 100px;
+}
+
+
+@media screen and (Max-width:700px){
+
+    .header_menu{
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        padding: 10px;
+        color: black;
+        
+    }
+
+    .galeriadeclases{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        height: 20%;
+        
+    }
+}
+
+
+
+
