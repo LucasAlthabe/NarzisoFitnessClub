@@ -5,8 +5,8 @@
 
 }
 
-.cuerpo{
-    background-color:  antiquewhite;
+#cuerpo{
+    background-image: linear-gradient(to bottom, rgb(247, 175, 82) ,rgb(247, 199, 137) )
 }
 
 
