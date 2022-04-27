@@ -9,17 +9,33 @@
     background-image: linear-gradient(to bottom, rgb(247, 175, 82) ,rgb(247, 199, 137) )
 }
 
+.header_menu {
+    transition: all 2s;
 
-.header .header_menu ul{
+}
+
+.header_menu ul li:hover{
+    font-size: 20px;
+}
+
+
+.header_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     list-style: none;
     text-align: center;
     padding-top: 30px;
     
+
 }
 
 .header .header_menu ul li{
     display: inline;
-    margin: 0 20px;
+    margin: 0 5px;
+    text-decoration: none;
 }
 
 .header .header_menu ul li a{
@@ -119,12 +135,11 @@
 }
 
 .mapa{
-    display: flex;
-    justify-content: center;
+    display: inline-block;
     margin: 30px;
-    padding-top: 50px;
     border-style: dashed;
     border-radius: 50px;
+    
     
 }
 
@@ -151,15 +166,14 @@
 
 @media screen and (Max-width:700px){
 
-    .header_menu{
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
+    .header_items{
         font-size: 10px;
         padding: 10px;
         color: black;
         
     }
+
+
 
     .galeriadeclases{
         grid-template-columns: 1fr;
@@ -169,6 +183,11 @@
     }
 }
 
+@media screen and (min-width:0px) and (max-width: 800px){
+    .header_items{
+        flex-direction: column;
 
+    }
+}
 
 
