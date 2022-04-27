@@ -9,41 +9,45 @@
     background-image: linear-gradient(to bottom, rgb(247, 175, 82) ,rgb(247, 199, 137) )
 }
 
-.header_menu {
-    transition: all 2s;
-
-}
-
-.header_menu ul li:hover{
-    font-size: 20px;
-}
+/*.header_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}*/
 
 
 .header_items{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-content: flex-end;
     flex-wrap: wrap;
     list-style: none;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px; 
     
-
 }
 
 .header .header_menu ul li{
-    display: inline;
-    margin: 0 5px;
-    text-decoration: none;
+    display: block;
+    
+    
 }
 
 .header .header_menu ul li a{
-    font-size: 30px;
-    padding: 20px;
+    font-size: 20px;
+    padding: 5px;
     color: black;
-    margin: 20px;
+    
 }
+
+/*.logo{
+display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-left: 40px;
+}*/
 
 
 .titulo-uno{
@@ -57,7 +61,7 @@
     background-size: cover;
     height: 30rem;
     position: relative;
-    
+    font-family: 'Courier New', Courier, monospace;
     
 
 }
@@ -162,6 +166,31 @@
 .foto1{
     border-top-left-radius: 100px;
 }
+
+
+
+.espacio{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagen_carrousel{
+    /*display: flex;
+    justify-content:center;
+    align-content: center;*/
+    height: 600px;
+    width: 600px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
 
 
 @media screen and (Max-width:700px){
