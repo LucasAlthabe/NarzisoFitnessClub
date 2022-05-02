@@ -6,23 +6,21 @@
 }
 
 #cuerpo{
-    background-image: linear-gradient(to bottom, rgb(247, 175, 82) ,rgb(247, 199, 137) )
+    background-image: linear-gradient(to bottom, rgb(242, 160, 51) ,rgb(247, 199, 137) );
+    
 }
 
-/*.header_menu{
+.header_menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}*/
+}
 
 
 .header_items{
     display: flex;
     flex-direction: row;
-    justify-content: right;
-    align-content: flex-end;
-    flex-wrap: wrap;
     list-style: none;
     text-align: center;
     padding-top: 20px; 
@@ -36,18 +34,18 @@
 }
 
 .header .header_menu ul li a{
-    font-size: 20px;
+    font-size: 15px;
     padding: 5px;
     color: black;
+    font-weight: bold;
+    text-decoration: none;
     
 }
 
-/*.logo{
-display: flex;
-    flex-direction: row;
-    justify-content: start;
+.logo{
     margin-left: 40px;
-}*/
+    margin-bottom: 0px;
+}
 
 
 .titulo-uno{
@@ -103,11 +101,7 @@ display: flex;
 
 
 
-#Redes{
-    list-style-type: none;
-    padding-left: 25px;
-    text-decoration: none;
-}
+
 
 .formulario{
     display: flex;
@@ -138,54 +132,58 @@ display: flex;
     padding: 50px;
 }
 
-.mapa{
-    display: inline-block;
-    margin: 30px;
-    border-style: dashed;
-    border-radius: 50px;
-    
-    
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
 }
 
-.galeriadeclases{
-    padding-top: 30px;
-
-    display: grid;  
-    /*grid-template-areas: "foto1 foto2 foto3"
-        "foto4 foto5 foto6"
-        "foto7 foto8 foto9"
-        "foto10 foto11 foto12";*/
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
-    row-gap: 20px;
-    justify-items: center;
-
-    
+.mapa{
+    display: inline-block;
+    margin: 30px auto;
+    border-style: dashed;
+    border-radius: 50px;
 }
 
 .foto1{
     border-top-left-radius: 100px;
 }
 
-
-
-.espacio{
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.carousel{
+    width: 400px;
+    margin: 50px 0;
 }
 
-.imagen_carrousel{
-    /*display: flex;
-    justify-content:center;
-    align-content: center;*/
-    height: 600px;
-    width: 600px;
+.redondeado{
     border-radius: 50px;
 }
 
+
+/*.imagen_carrousel{
+    /*display: flex;
+    justify-content:center;
+    align-content: center;
+    height: 600px;
+    width: 600px;
+    
+}*/
+
+
+.footer{
+    background-color:rgb(242, 160, 51) ;
+    margin-top: 10px;
+    
+}
+
+.iconos{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+
+}
 
 
 

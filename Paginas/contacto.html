@@ -1,49 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacto</title>
-    <link rel="shortcut icon" href="../Imagenes/logo.png">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body id="cuerpo">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>contacto</title>
+        <link rel="shortcut icon" href="../Imagenes/logo.png" />
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body id="cuerpo">
+        <header class="header">
+            <nav class="header_menu">
+                <ul border="1" class="header_items">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./nostros.html">NOSOTROS</a></li>
+                    <li><a href="./clases.html">CLASES</a></li>
+                    <li><a href="./musculacion.html">Musuculación</a></li>
+                    <li><a href="./Ubicacion.html">Ubicacion</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <Header class="header" >
-        <nav class="header_menu">
-            <ul border="1" class="header_items">
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="./nostros.html">NOSOTROS</a></li>
-                <li><a href="./clases.html">CLASES</a></li>
-                <li><a href="./musculacion.html">Musuculación</a></li>
-                <li><a href="./Ubicacion.html">Ubicacion</a></li>
+        <br /><br /><br />
 
-            </ul>
-        </nav>
-    </Header>
+        <form action="" class="formulario">
+            <fieldset class="formulario_uno">
+                <legend>CONTACTANOS</legend>
+                <label for="nombre">Nombre y Apellido</label><br />
+                <input type="text" name="nombre" /><br />
+                <label for="email">Email</label><br />
+                <input type="email" name="email" /><br />
+                <label for="number">Telefono</label><br />
+                <input type="number" name="number" /><br />
+                <label for="sexo">Sexo</label><br />
+                <input type="radio" name="sexo" /> Masculino
+                <input type="radio" name="sexo" /> Femenino
+                <input type="radio" name="sexo" /> Otro <br /><br />
+                <textarea
+                    name="comentario"
+                    placeholder="Deja tu comentario"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+                <br /><br />
+                <input type="submit" value="enviar" />
+                <input type="reset" value="borrar" />
+            </fieldset>
+        </form>
 
-<br><br><br>
-
-    <form action="" class="formulario">
-        <fieldset class="formulario_uno">
-            <legend>CONTACTANOS</legend>
-            <label for="nombre">Nombre y Apellido</label><br>
-            <input type="text" name="nombre"><br>
-            <label for="email">Email</label><br>
-            <input type="email" name="email"><br>
-            <label for="number">Telefono</label><br>
-            <input type="number" name="number"><br>
-            <label for="sexo">Sexo</label><br>
-            <input type="radio" name="sexo"> Masculino
-            <input type="radio" name="sexo"> Femenino
-            <input type="radio" name="sexo"> Otro <br><br>
-            <textarea name="comentario" placeholder="Deja tu comentario" cols="30" rows="10"></textarea>
-            <br><br>
-            <input type="submit" value="enviar">
-            <input type="reset" value="borrar">
-        </fieldset>
-    </form>
-
-</body>
+        <footer class="footer">
+            <article class="iconos">
+                <a
+                    href="https://www.instagram.com/narzisogym/"
+                    target="_blanck"
+                >
+                    <img
+                        src="../Imagenes/Logos/icons8-instagram-48.png"
+                        alt=""
+                    />
+                </a>
+                <a href="https://www.facebook.com/narzisogym" target="_blanck">
+                    <img
+                        src="../Imagenes/Logos/icons8-facebook-nuevo-48.png"
+                        alt=""
+                    />
+                </a>
+                <a href="" target="_blanck">
+                    <img
+                        src="../Imagenes/Logos/icons8-whatsapp-48.png"
+                        alt=""
+                    />
+                </a>
+                <a href="" target="_blanck">
+                    <img
+                        src="../Imagenes/Logos/icons8-mapas-de-google-48.png"
+                        alt=""
+                    />
+                </a>
+            </article>
+        </footer>
+    </body>
 </html>
