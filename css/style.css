@@ -171,6 +171,38 @@
 }*/
 
 
+.blogSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    margin: 20px 10%;
+    padding-top: 20px;
+}
+
+.blogTitulo{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+
+.blogDescripcion{
+    margin-bottom: 50px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.blogOpiniones{
+    border-top: 1px solid black;
+    margin: 10px 0;
+}
+
+.blogOpiniones p{
+    margin-top: 15px;
+}
+
+
+
+
 .footer{
     background-color:rgb(242, 160, 51) ;
     margin-top: 10px;
