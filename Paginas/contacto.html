@@ -20,40 +20,88 @@
                 <p class="logo">NARZISO</p>
                 <ul border="1" class="header_items">
                     <li><a href="../index.html">HOME</a></li>
-                    <li><a href="./contacto.html">CONTACTO</a></li>
                     <li><a href="./nostros.html">NOSOTROS</a></li>
                     <li><a href="./clases.html">CLASES</a></li>
                     <li><a href="./Comentarios.html">COMENTARIOS</a></li>
-                    <li><a href="./Ubicacion.html">UBICACION</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>
         </header>
 
-        <div class="centrado">
-            <form action="" class="formulario">
-                <fieldset class="formulario_uno">
-                    <legend>CONTACTANOS</legend>
-                    <label for="nombre">Nombre y Apellido</label><br />
-                    <input type="text" name="nombre" /><br />
-                    <label for="email">Email</label><br />
-                    <input type="email" name="email" /><br />
-                    <label for="number">Telefono</label><br />
-                    <input type="number" name="number" /><br />
-                    <label for="sexo">Sexo</label><br />
-                    <input type="radio" name="sexo" /> Masculino
-                    <input type="radio" name="sexo" /> Femenino
-                    <input type="radio" name="sexo" /> Otro <br /><br />
-                    <textarea
-                        name="comentario"
-                        placeholder="Deja tu comentario"
-                        cols="30"
-                        rows="10"
-                    ></textarea>
-                    <br /><br />
-                    <input type="submit" value="enviar" />
-                    <input type="reset" value="borrar" />
-                </fieldset>
-            </form>
+        <div class="contacto">
+            <article>
+                <form action="">
+                    <fieldset class="formFilset">
+                        <label for="nombre" class="formLabel"
+                            >Nombre y Apellido</label
+                        >
+                        <input type="text" name="nombre" class="formInput" />
+                        <label for="email" class="formLabel">Email</label>
+                        <input type="email" name="email" class="formInput" />
+                        <label for="number" class="formLabel">Telefono</label>
+                        <input type="number" name="number" class="formInput" />
+                        <select
+                            class="form-select edit"
+                            aria-label="Default select example"
+                        >
+                            <option selected class="select">
+                                Selecione Motivo
+                            </option>
+                            <option value="1">Conocer Planes y costos</option>
+                            <option value="2">Realizar una consulta</option>
+                            <option value="3">Realizar una queja</option>
+                        </select>
+                        <textarea
+                            rows="3"
+                            name="comentario"
+                            placeholder="Comentarios..."
+                            class="textarea"
+                        ></textarea>
+                        <input
+                            type="submit"
+                            value="Enviar"
+                            class="botonenviar"
+                        />
+                    </fieldset>
+                </form>
+            </article>
+            <article class="infocontacto">
+                <h3 class="contacTitulo">Informacion de contacto</h3>
+                <div class="contactData">
+                    <img
+                        src="../Imagenes/Logos contacto/Telefono.png"
+                        alt=""
+                        class="contactIcono"
+                    />
+                    <p class="contactTexto">+54 9 11 5998-7518</p>
+                </div>
+                <div class="contactData">
+                    <img
+                        src="../Imagenes/Logos contacto/Instagram.png"
+                        alt=""
+                        class="contactIcono"
+                    />
+                    <p class="contactTexto">@narzisogym</p>
+                </div>
+                <div class="contactData">
+                    <img
+                        src="../Imagenes/Logos contacto/maps.png"
+                        alt=""
+                        class="contactIcono"
+                    />
+                    <p class="contactTexto">
+                        Av. Medrano 1900, CABA, Argentina
+                    </p>
+                </div>
+                <div class="contactData">
+                    <img
+                        src="../Imagenes/Logos contacto/gmail.png"
+                        alt=""
+                        class="contactIcono"
+                    />
+                    <p class="contactTexto">Infonarziso@gmail.com</p>
+                </div>
+            </article>
         </div>
 
         <footer class="footer">

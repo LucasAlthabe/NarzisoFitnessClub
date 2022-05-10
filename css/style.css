@@ -220,9 +220,102 @@
 }
 
 
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.formFilset{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;;
+    border-radius: 15px;
+    width: 400px;
+    margin: 20px 0;
+    
+}
+
+.formLabel{
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.formInput{
+    height: 32px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    text-indent: 5px;
+    font-size: 1rem;
+    background: none;
+}
+
+.textarea{
+    width: 100%;
+    resize: none;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    padding: 2px;
+    margin: 10px 0 30px;
+    border: 1px solid black;
+}
+
+.botonenviar{
+    align-self: center;
+    font-size: 1rem;
+    color: black;
+    padding: 10px 25px;
+    background-color:cornflowerblue;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.form-select {
+    margin:  20px 0;
+}
+
+
+.infocontacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    margin: 20px 0;
+    width: 400px;
+    height: 428px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border-radius: 15px;
+}
 
 
 
+.contactData{
+        display: flex;
+        align-items: center;
+        width: 100%;
+}
+
+.contactTexto{
+    margin: 15px;
+}
+    
+
+.contactIcono{
+    width: 25px;
+    height: 25px;
+    margin: 10px ;
+    border-right: 1px solid black;
+    
+}
 
 
 @media screen and (Max-width:700px){
