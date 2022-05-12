@@ -6,8 +6,8 @@
 }
 
 #cuerpo{
-    background-image: linear-gradient(to bottom, rgb(242, 160, 51) ,rgb(247, 199, 137) );
-    
+/* background-image: linear-gradient(to bottom, rgb(242, 160, 51) ,rgb(247, 199, 137) );*/
+background-color: rgb(247, 199, 137);
 }
 
 .header_menu{
@@ -15,6 +15,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color:rgb(242, 160, 51) 
 }
 
 
@@ -50,6 +51,10 @@
     color: black;
 }
 
+nav a{
+    text-decoration: none;
+}
+
 
 .titulo-uno{
     color: black;
@@ -60,17 +65,25 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 30rem;
+    height: 50rem;
     position: relative;
     font-family: 'Courier New', Courier, monospace;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.titulo{
+    font-weight: bold;
+    font-size: 65px;
 }
 
 .subtitulo{
     color: black;
     text-align: center;
     font-style: italic;
+    font-size: 40px;
 }
 
 .galeria{
@@ -89,6 +102,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding: 10px;
+    margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .galeria img{
@@ -201,8 +216,26 @@
     margin-top: 15px;
 }
 
+.blogOpinionesAutor{
+    font-size: 20px;
+    font-weight: 500;
+}
 
+div a{
+    text-decoration: none;
+}
 
+.vertodosBoton{
+    align-self: center;
+    font-size: 1rem;
+    color: black;
+    padding: 10px 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
 
 .footer{
     background-color:rgb(242, 160, 51) ;
@@ -222,6 +255,7 @@
 
 
 .contacto{
+    background:  (#B773FF);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -231,14 +265,15 @@
 
 
 .formFilset{
+    background: #FFB18D;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 30px;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;;
     border-radius: 15px;
-    width: 400px;
-    margin: 20px 0;
+    width: 360px;
+    margin: 20px 0px;
     
 }
 
@@ -291,7 +326,7 @@
     align-items: flex-start;
     padding: 30px;
     margin: 20px 0;
-    width: 400px;
+    width: 360px;
     height: 428px;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     border-radius: 15px;
@@ -311,11 +346,10 @@
     
 
 .contactIcono{
-    width: 25px;
     height: 25px;
     margin: 10px ;
     border-right: 1px solid black;
-    
+    padding-right: 15px;
 }
 
 
@@ -325,16 +359,6 @@
         font-size: 10px;
         padding: 10px;
         color: black;
-        
-    }
-
-
-
-    .galeriadeclases{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        height: 20%;
-        
     }
 }
 
@@ -344,5 +368,6 @@
 
     }
 }
+
 
 
