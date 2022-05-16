@@ -7,15 +7,17 @@
 
 #cuerpo{
 /* background-image: linear-gradient(to bottom, rgb(242, 160, 51) ,rgb(247, 199, 137) );*/
-background-color: rgb(247, 199, 137);
+background-color: #77D9B4
 }
+
+/*HEADER*/
 
 .header_menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color:rgb(242, 160, 51) 
+    background-color:#3DA17F
 }
 
 
@@ -55,6 +57,12 @@ nav a{
     text-decoration: none;
 }
 
+/*HOME MAIN*/
+
+.imagenmuscu{
+    width: 100%;
+    height: 700px;
+}
 
 .titulo-uno{
     color: black;
@@ -85,6 +93,8 @@ nav a{
     font-style: italic;
     font-size: 40px;
 }
+
+/*HOME GALERIA*/
 
 .galeria{
     border-radius: 15px;
@@ -118,19 +128,11 @@ nav a{
 }
 
 
-.formulario{
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-    border-style: double;
-}
 
-.formulario .formulario_uno{
-    margin-left: 15px;
-    padding: 15px;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
+/*NOSOTROS*/
+
+video{
+    width: 100%;
     
 }
 
@@ -150,22 +152,111 @@ nav a{
     padding: 50px;
 }
 
+/*CLASS CENTRADO*/
+
 .centrado{
     display: flex;
     justify-content: center;
     align-items: center ;
+
 }
 
-.mapa{
-    display: inline-block;
-    margin: 30px auto;
-    border-style: dashed;
-    border-radius: 50px;
-}
+
 
 .foto1{
     border-top-left-radius: 100px;
 }
+
+/*ACTIVIDADES*/
+
+.clases{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.imagenhorarios{
+    margin: 20px 10px;
+    height: 450px;
+    width: 450px;
+    border-radius: 20px;
+}
+
+.tituloClases{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin: 20px 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+
+}
+
+.botonconsultar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.consultarClases{
+    font-size: 1rem;
+    color: black;
+    padding: 10px 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    }
+
+.musculacion{
+    background-image: url(../Imagenes/mancuernero.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    margin-top: 50px ;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+section h3{
+    padding: 5%;
+    font-size: 70px;
+    color: black;
+    
+}
+
+.profes{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.staff{
+    height: 20%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    flex-wrap: wrap;
+    font-size: 70px;
+    color: black;
+    background-color: aqua;
+    border-radius: 10px;
+    border: none;
+    margin: 30px 15px
+    
+}
+
 
 .carousel{
     width: 450px;
@@ -176,16 +267,7 @@ nav a{
     border-radius: 50px;
 }
 
-
-/*.imagen_carrousel{
-    /*display: flex;
-    justify-content:center;
-    align-content: center;
-    height: 600px;
-    width: 600px;
-    
-}*/
-
+/*COMENTARIOS*/
 
 .blogSection{
     display: flex;
@@ -216,6 +298,8 @@ nav a{
     margin-top: 15px;
 }
 
+
+
 .blogOpinionesAutor{
     font-size: 20px;
     font-weight: 500;
@@ -237,8 +321,10 @@ div a{
     cursor: pointer;
 }
 
+/*FOOTER*/
+
 .footer{
-    background-color:rgb(242, 160, 51) ;
+    background-color:#3DA17F;
     margin-top: 10px;
     
 }
@@ -253,9 +339,9 @@ div a{
 
 }
 
+/*CONTACTO*/
 
 .contacto{
-    background:  (#B773FF);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -265,7 +351,7 @@ div a{
 
 
 .formFilset{
-    background: #FFB18D;
+    background: #00AFC3;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -308,7 +394,7 @@ div a{
     font-size: 1rem;
     color: black;
     padding: 10px 25px;
-    background-color:cornflowerblue;
+    background-color: #3DA17F;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -320,6 +406,7 @@ div a{
 
 
 .infocontacto{
+    background: #00AFC3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -330,9 +417,8 @@ div a{
     height: 428px;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     border-radius: 15px;
+
 }
-
-
 
 .contactData{
         display: flex;
@@ -351,6 +437,8 @@ div a{
     border-right: 1px solid black;
     padding-right: 15px;
 }
+
+
 
 
 @media screen and (Max-width:700px){
