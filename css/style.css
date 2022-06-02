@@ -85,6 +85,7 @@ nav a{
 .titulo{
     font-weight: bold;
     font-size: 65px;
+    text-shadow: 0px 1px 4px white;
 }
 
 .subtitulo{
@@ -92,6 +93,8 @@ nav a{
     text-align: center;
     font-style: italic;
     font-size: 40px;
+    font-weight: 600;
+    text-shadow: 0px 1px 4px white;
 }
 
 /*HOME GALERIA*/
@@ -136,6 +139,8 @@ video{
     
 }
 
+
+
 .presentacion__titulo{
     display: flex;
     justify-content: center;
@@ -149,8 +154,28 @@ video{
 .presentacion__parrafo{
     display: flex;
     text-align:justify;
+    justify-content: center;
     padding: 50px;
+    font-size: 19px
 }
+
+.parrafo2{
+    display: flex;
+    text-align:justify;
+    justify-content: center;
+    margin-top: 2px;
+    font-size: 19px
+}
+
+.parrafo3{
+    display: flex;
+    text-align:justify;
+    justify-content: center;
+    padding: 50px;
+    font-size: 19px
+}
+
+
 
 /*CLASS CENTRADO*/
 
@@ -226,13 +251,14 @@ video{
     display: flex;
     justify-content: right;
     align-items: center;
+    
 }
 
 section h3{
     padding: 5%;
     font-size: 70px;
     color: black;
-    
+    text-shadow: 0px 1px 4px white;
 }
 
 .profes{
@@ -240,21 +266,22 @@ section h3{
     margin-bottom: 20px;
 }
 
-.staff{
-    height: 20%;
-    width: 20%;
+.centradostaff{
     display: flex;
     justify-content: center;
     align-items: center;
     justify-self: center;
     flex-wrap: wrap;
+}
+
+.staff{
     font-size: 70px;
     color: black;
     background-color: aqua;
     border-radius: 10px;
-    border: none;
-    margin: 30px 15px
-    
+    border: none;  
+    margin: 30px 15px;
+    padding: 10px
 }
 
 
@@ -386,7 +413,7 @@ div a{
     font-family: "Open Sans", sans-serif;
     padding: 2px;
     margin: 10px 0 30px;
-    border: 1px solid black;
+    
 }
 
 .botonenviar{
@@ -454,6 +481,18 @@ div a{
     .header_items{
         flex-direction: column;
 
+    }
+}
+
+@media screen and (min-width:0px) and (max-width: 500px){
+
+    .imagenhorarios{
+        width: 300px;
+        height: 300px;
+    }
+
+    .musculacion h3{
+        font-size: 50px;
     }
 }
 
